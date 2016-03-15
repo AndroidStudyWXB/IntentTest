@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 // 可以调用intent的addCategory方法添加新的category, intent的category必须是某个活动
                 // category的子集，才能启动某个活动
                 intent.addCategory("com.study.intenttest.MY_CATEGORY");
+                // 使用intent向下一个活动传递数据
+                intent.putExtra("mainactivity", "helle, second activity");
                 // startActivity()方法会自动在intent添加default category
                 startActivity(intent);
             }
