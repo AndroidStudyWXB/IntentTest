@@ -29,4 +29,12 @@ public class FourthActivity extends Activity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent();
+        intent.putExtra("data_return", "Hello, MainActivity");
+        setResult(RESULT_OK, intent);
+        finish();
+    }
 }
