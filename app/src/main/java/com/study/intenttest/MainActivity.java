@@ -19,7 +19,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // 每个intent 只能指定一个action，但可以有多个category
                 Intent intent = new Intent("com.study.intenttest.ACTION_START");
+                // 可以调用intent的addCategory方法添加新的category
+                intent.addCategory("com.study.intenttest.MY_CATEGORY");
                 // startActivity()方法会自动在intent添加default category
                 startActivity(intent);
             }
