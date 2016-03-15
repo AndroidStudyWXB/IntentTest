@@ -21,6 +21,7 @@
                 <action android:name="com.study.intenttest.ACTION_START" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.study.intenttest.MY_CATEGORY" />
+                <category android:name="com.study.intenttest.CATEGORY" />
             </intent-filter>
         </activity>
     </application>

@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // 每个intent 只能指定一个action，但可以有多个category
                 Intent intent = new Intent("com.study.intenttest.ACTION_START");
-                // 可以调用intent的addCategory方法添加新的category
+                // 可以调用intent的addCategory方法添加新的category, intent的category必须是某个活动
+                // category的子集，才能启动某个活动
                 intent.addCategory("com.study.intenttest.MY_CATEGORY");
                 // startActivity()方法会自动在intent添加default category
                 startActivity(intent);
